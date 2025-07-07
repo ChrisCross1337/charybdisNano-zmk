@@ -7,13 +7,16 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define NUFU 1
+#define NUM 1
 #define SYM 2
 #define NAV 3
 #define MED 4
 #define POI 5
 #define SCR 6
 #define SNI 7
+#define GAM 7
+#define BUT 7
+
 
 &sl { release-after-ms = <250>; };
 
@@ -90,7 +93,7 @@
         };
 
         Numerical {
-            label = "Numeral/Function";
+            label = "Numerical";
             bindings = <
   &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET       &trans  &trans          &trans     &trans        &trans
   &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
@@ -160,6 +163,8 @@
         };
 
         Gaming {
+            label = "Gaming";
+
             bindings = <
   &kp TAB         &kp Q  &kp W         &kp E      &kp R        &kp NUMBER_1   &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5
   &kp LEFT_SHIFT  &kp A  &kp S         &kp D      &kp S        &kp BACKSPACE  &trans          &kp UP_ARROW  &trans        &trans
@@ -168,7 +173,8 @@
             >;
         };
 
-        button {
+        Button {
+            label = "Button";
             bindings = <
   &bootloader   &trans        &trans      &trans          &trans        &trans      &trans          &trans      &trans         &bootloader
   &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp CAPS      &kp CAPS    &kp LEFT_SHIFT  &kp RCTRL   &kp RIGHT_ALT  &kp RIGHT_WIN

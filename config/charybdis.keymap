@@ -144,7 +144,6 @@
 
         Gaming {
             label = "GAM";
-
             bindings = <
   &kp TAB         &kp Q  &kp W         &kp E      &kp R        &kp N1   &kp N2    &kp N3  &kp N4  &kp N5
   &kp LEFT_SHIFT  &kp A  &kp S         &kp D      &kp S        &kp BACKSPACE  &trans          &kp UP_ARROW  &trans        &trans

@@ -12,8 +12,8 @@
 #define POI 5
 #define SCR 6
 #define SNI 7
-#define GAM 8
-#define BUT 9
+#define GAM 7
+#define BUT 7
 
 
 &sl { release-after-ms = <250>; };
@@ -58,6 +58,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to_gaming {
+            bindings = <&tog 8>;
+            key-positions = <1 0 2 3>;
+        };
+
+        to_base {
+            bindings = <&tog 0>;
+            key-positions = <1 2 3 4>;
+        };
+
+        Button {
+            bindings = <&mo 9>;
+            key-positions = <31 30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -67,7 +86,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T       &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F   &kp G       &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON
   &lt POI Z    &kp X        &kp C         &kp V          &kp B       &kp N  &kp M         &kp COMMA     &kp DOT      &lt POI SLASH
-                            &lt MED ESC   &lt NAV SPACE  &lt NUM TAB     &sl 1  &sl SYM
+                            &lt MED ESC   &lt NAV SPACE  &sl NUFU    &sl 1  &sl SYM
             >;
         };
 
@@ -75,8 +94,8 @@
             label = "Numerical";
             bindings = <
   &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET       &trans  &trans          &trans     &trans        &trans
-  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
-  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH    &trans  &trans          &trans     &trans        &trans
+  &kp SEMICOLON     &kp N4  &kp N5        &kp N6  &kp EQUAL               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
+  &kp GRAVE         &kp N1  &kp N2  &kp N3  &kp NON_US_BACKSLASH    &trans  &trans          &trans     &trans        &trans
                                   &kp PERIOD    &kp N0        &kp MINUS               &trans  &trans
             >;
         };
@@ -145,7 +164,7 @@
             label = "Gaming";
 
             bindings = <
-  &kp TAB         &kp Q  &kp W         &kp E      &kp R        &kp NUMBER_1   &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5
+  &kp TAB         &kp Q  &kp W         &kp E      &kp R        &kp N1   &kp N2    &kp N3  &kp N4  &kp N5
   &kp LEFT_SHIFT  &kp A  &kp S         &kp D      &kp S        &kp BACKSPACE  &trans          &kp UP_ARROW  &trans        &trans
   &kp LCTRL       &kp Z  &kp X         &kp C      &kp V        &kp M          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &kp CAPSLOCK
                          &kp LEFT_ALT  &kp SPACE  &kp ENTER    &kp LEFT_GUI   &kp ESCAPE

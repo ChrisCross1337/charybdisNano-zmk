@@ -15,8 +15,5 @@ manifest:
       remote: inorichi
       revision: main
       path: zmk-pmw3610-driver
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: main
   self:
     path: config

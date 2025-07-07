@@ -33,9 +33,9 @@ layers:
   - {t: /, h: POI}
   - {t: '$$mdi:keyboard-esc$$', h: MED}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: NUM}
-  - {t: NUM, h: sticky}
-  - {t: SYM, h: sticky}
+  - {t: '$$mdi:keyboard-tab$$', h: BUT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: FUN}
   NUM:
   - '['
   - '7'
@@ -69,10 +69,10 @@ layers:
   - {t: ▽, type: trans}
   - .
   - '0'
-  - {t: '-', type: held}
+  - '-'
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SYM:
+  FUN:
   - F12
   - F7
   - F8
@@ -355,9 +355,9 @@ layers:
   - COPY
   - CUT
   - UNDO
-  - {type: held}
-  - {type: held}
-  - '&mkp MCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&mkp MCLK', type: held}
   - '&mkp RCLK'
   - '&mkp LCLK'
 combos:

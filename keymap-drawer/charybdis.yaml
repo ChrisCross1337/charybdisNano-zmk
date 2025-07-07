@@ -52,11 +52,11 @@ layers:
   - '5'
   - '6'
   - '='
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - '&CAPSLOCK'
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT WIN
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - '`'
   - '1'
   - '2'
@@ -88,17 +88,17 @@ layers:
   - F5
   - F6
   - SCROLLLOCK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - F10
   - F1
   - F2
   - F3
   - PAUSE BREAK
-  - '1'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,10 +119,10 @@ layers:
   - COPY
   - CUT
   - UNDO
-  - LEFT WIN
-  - LEFT ALT
-  - LEFT CONTROL
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-caps$$
   - LEFT ARROW
@@ -155,11 +155,11 @@ layers:
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT WIN
-  - LEFT ALT
-  - LEFT CONTROL
-  - LEFT SHIFT
-  - $$mdi:skip-next$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
   - BT CLR
   - PREVIOUS
   - $$mdi:volume-low$$

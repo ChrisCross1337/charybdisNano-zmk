@@ -35,7 +35,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: BUT}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - '&fun_bspc'
   NUM:
   - '['
   - '7'
@@ -357,7 +357,7 @@ layers:
   - Ctl+Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&tran', type: held}
+  - {type: held}
   - '&mkp RCLK'
   - '&mkp LCLK'
 combos:

@@ -35,7 +35,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: BUT}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', h: FUN}
   NUM:
   - '['
   - '7'
@@ -98,7 +98,7 @@ layers:
   - F2
   - F3
   - PAUSE BREAK
-  - {t: ▽, type: trans}
+  - '1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,7 +107,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace-reverse-outline$$', type: held}
   NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

@@ -52,7 +52,7 @@ layers:
   - '5'
   - '6'
   - '='
-  - '&CAPSLOCK'
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$

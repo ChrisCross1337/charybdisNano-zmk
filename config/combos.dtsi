@@ -21,18 +21,8 @@ combos {
   COMBO(r_leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
   COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
   COMBO(r_middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
-        to_gaming {
-            bindings = <&tog 8>;
-            key-positions = <1 0 2 3>;
-        };
-
-        to_base {
-            bindings = <&tog 0>;
-            key-positions = <1 2 3 4>;
-        };
-
-        Button {
-            bindings = <&mo 9>;
-            key-positions = <31 30>;
-        };
+  
+  to_gaming {   bindings = <&tog 8>;   key-positions = <1 0 2 3>; };
+  to_base   {   bindings = <&tog 0>;   key-positions = <1 2 3 4>; };
+  Button    {   bindings = <&mo 9>;    key-positions = <31 30>; };
 }; 

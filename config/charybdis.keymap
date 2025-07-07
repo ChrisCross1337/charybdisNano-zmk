@@ -34,8 +34,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
-            keep-mods = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
@@ -164,7 +164,7 @@
             bindings = <
   &bootloader   &trans        &trans      &trans          &trans        &trans      &trans          &trans      &trans         &bootloader
   &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp CAPS      &kp CAPS    &kp LEFT_SHIFT  &kp RCTRL   &kp RIGHT_ALT  &kp RIGHT_WIN
-  &kp C_AC_UNDO   &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE   &kp C_AC_REDO            &kp C_AC_REDO     &kp C_AC_PASTE     &kp C_AC_COPY  &kp C_AC_CUT          &kp C_AC_UNDO   
+ &kp LC(Z)     &kp LC(X)      &kp LC(C)       &kp LC(V)        &kp LC(Y)           &kp LC(Y)     &kp LC(V)     &kp LC(C)  &kp LC(X)   &kp LC(Z)   
                               &trans      &trans          &tran     &mkp RCLK   &mkp LCLK
             >;
         };

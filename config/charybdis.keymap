@@ -34,18 +34,21 @@
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
+            /* first = BACKSPACE, second = DELETE when Shift held */
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            /* fire second binding if either Shift is down */
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            /* don’t re-send Shift along with the DELETE code */
+            keep-mods = <0>;
         };
         fun_bspc: fun_backspace {
-            compatible       = "zmk,behavior-hold-tap";
-            #binding-cells   = <2>;
-            tapping-term-ms  = <200>;
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
 
-            /* first cell = tap behavior, second cell = hold behavior */
-            bindings = <&bspc_del, 0>,   /* tap → backspace_delete */
-                       <&to, FUN>;       /* hold → go to FUN layer */
+            /* tap → run the mod-morph behavior */
+            /* hold → jump to FUN layer (use your layer ID here) */
+            bindings = <&bspc_del, 0>, <&to, FUN>;
         };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";

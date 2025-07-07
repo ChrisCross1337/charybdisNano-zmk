@@ -37,6 +37,12 @@
             bindings      = <&kp BACKSPACE>, <&kp DELETE>;
             mods           = <(MOD_LSFT | MOD_RSFT)>;
         };
+        fun_bspc: fun_backspace {
+            compatible       = "zmk,behavior-hold-tap";
+            #binding-cells   = <0>;
+            tapping-term-ms  = <200>;
+            bindings         = <&bspc_del>, <&lt FUN>;
+        };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_HAND";

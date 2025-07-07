@@ -36,13 +36,12 @@
             #binding-cells = <0>;
             bindings      = <&kp BACKSPACE>, <&kp DELETE>;
             mods           = <(MOD_LSFT | MOD_RSFT)>;
-            keep-mods      = <0>;
         };
         fun_bspc: fun_backspace {
             compatible       = "zmk,behavior-hold-tap";
             #binding-cells   = <2>;
             tapping-term-ms  = <200>;
-            bindings         = <&bspc_del &to FUN>;
+            bindings         = <&bspc_del>, <&lt FUN>;
         };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";

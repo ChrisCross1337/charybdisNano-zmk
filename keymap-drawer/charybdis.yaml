@@ -381,4 +381,4 @@ combos:
   l: [Base]
 - p: [1, 2, 3, 4]
   k: {t: Base, h: toggle}
-  l: [Base]
+  l: [GAM]

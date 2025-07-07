@@ -133,7 +133,7 @@
   &trans    &trans    &trans     &trans     &trans       &trans     &trans     &trans     &trans    &trans
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &tog 5     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
   &trans    &mo SCR   &mo SNI    &trans     &tog 5       &mkp MB5   &mkp MB3   &tog SNI   &tog SCR  &mkp MB4
-                      &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp MCLK  &mkp LCLK
+                      &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp LCLK  &mkp MCLK
             >;
         };
 

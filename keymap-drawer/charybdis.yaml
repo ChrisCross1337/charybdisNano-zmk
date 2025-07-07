@@ -33,10 +33,10 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: Numeral/Function, h: sticky}
-  - {t: Numeral/Function, h: sticky}
+  - {t: Numerical, h: sticky}
+  - {t: Numerical, h: sticky}
   - {t: Symbol, h: sticky}
-  Numeral/Function:
+  Numerical:
   - '['
   - '7'
   - '8'
@@ -324,7 +324,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LEFT GUI
   - ESCAPE
-  button:
+  Button:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -384,4 +384,4 @@ combos:
 - p: [1, 2, 3, 4]
   k: {t: Base, h: toggle}
 - p: [31, 30]
-  k: button
+  k: Button

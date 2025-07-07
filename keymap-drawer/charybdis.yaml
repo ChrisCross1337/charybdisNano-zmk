@@ -357,7 +357,7 @@ layers:
   - AC UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MCLK', type: held}
+  - {t: '&tran', type: held}
   - '&mkp RCLK'
   - '&mkp LCLK'
 combos:

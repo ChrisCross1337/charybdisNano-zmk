@@ -132,7 +132,7 @@
             bindings = <
   &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)     &kp LC(Y)     &kp LC(V)     &kp LC(C)  &kp LC(X)   &kp LC(Z)   
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &trans     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &trans    &mo SCR   &mo SNI    &trans     &trans        &mkp MB5   &mkp MCLK   &tog SNI   &tog SCR  &mkp MB4
+  &trans    &mo SCR   &mo SNI    &trans     &trans        &mkp MB4   &mkp MCLK   &tog SNI   &tog SCR  &mkp MB5
                       &mkp MCLK  &mkp LCLK  &mkp RCLK     &mkp LCLK  &mkp RCLK
             >;
         };

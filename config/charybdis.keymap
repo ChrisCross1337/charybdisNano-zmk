@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/mouse.h>   /* mouse-button & move/scroll codes */#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/modifiers.h>
 
 #define BASE 0
 #define NUM 1
@@ -75,7 +76,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T         &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F   &kp G         &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON
   &lt POI Z    &kp X        &kp C         &kp V          &kp B         &kp N  &kp M         &kp COMMA     &kp DOT      &lt POI SLASH
-                            &lt MED ESC   &lt NAV SPACE  &lt BUT TAB   &lt NUM ENTER  &lt FUN BACKSPACE
+                            &lt MED ESC   &lt NAV SPACE  &lt BUT TAB   &lt NUM ENTER  &lt FUN &bspc_del
             >;
         };
 
@@ -164,7 +165,7 @@
             bindings = <
   &bootloader   &trans        &trans      &trans          &trans        &trans      &trans          &trans      &trans         &bootloader
   &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp CAPS      &kp CAPS    &kp LEFT_SHIFT  &kp RCTRL   &kp RIGHT_ALT  &kp RIGHT_WIN
-  &kp K_UNDO    &kp K_CUT     &kp K_COPY  &kp K_PASTE     &kp K_REDO    &kp K_REDO  &kp K_PASTE     &kp K_COPY  &kp K_CUT      &kp K_UNDO
+  &kp C_AC_UNDO   &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE   &kp C_AC_REDO            &kp C_AC_REDO     &kp C_AC_PASTE     &kp C_AC_COPY  &kp C_AC_CUT          &kp C_AC_UNDO   
                               &trans      &trans          &mkp MCLK     &mkp RCLK   &mkp LCLK
             >;
         };

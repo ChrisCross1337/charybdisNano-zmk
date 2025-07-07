@@ -12,8 +12,8 @@
 #define POI 5
 #define SCR 6
 #define SNI 7
-#define GAM 7
-#define BUT 7
+#define GAM 8
+#define BUT 9
 
 
 &sl { release-after-ms = <250>; };

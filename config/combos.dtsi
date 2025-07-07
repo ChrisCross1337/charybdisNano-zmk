@@ -22,6 +22,4 @@ combos {
   COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
   COMBO(to_gaming, &tog 8, 1 0 2 3, BASE, COMBO_TERM_SLOW)
   COMBO(to_base, &tog 0, 1 2 3 4, BASE, COMBO_TERM_SLOW)
-  COMBO(Button, &mo 9, 31 30, BASE, COMBO_TERM_SLOW)
-
 }; 

@@ -370,10 +370,10 @@ combos:
 - p: [22, 24]
   k: '&mkp MCLK'
   l: [Base]
-- p: [17, 19]
+- p: [16, 18]
   k: '&mkp LCLK'
   l: [Base]
-- p: [27, 29]
+- p: [26, 28]
   k: '&mkp RCLK'
   l: [Base]
 - p: [0, 1, 2, 3]

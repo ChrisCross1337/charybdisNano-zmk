@@ -38,14 +38,6 @@
             mods           = <(MOD_LSFT | MOD_RSFT)>;
             keep-mods      = <0>;
         };
-
-        /* 2) hold-tap: tap → bspc_del, hold → go to FUN layer */
-        fun_bspc: fun_backspace {
-            compatible       = "zmk,behavior-hold-tap";
-            #binding-cells   = <2>;
-            tapping-term-ms  = <200>;
-            bindings         = <&bspc_del, 0>, <&to, FUN>;
-        };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_HAND";

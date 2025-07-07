@@ -382,6 +382,3 @@ combos:
 - p: [1, 2, 3, 4]
   k: {t: Base, h: toggle}
   l: [Base]
-- p: [31, 30]
-  k: BUT
-  l: [Base]

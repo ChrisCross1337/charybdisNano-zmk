@@ -166,7 +166,7 @@
   &bootloader   &trans        &trans      &trans          &trans        &trans      &trans          &trans      &trans         &bootloader
   &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp CAPS      &kp CAPS    &kp LEFT_SHIFT  &kp RCTRL   &kp RIGHT_ALT  &kp RIGHT_WIN
   &kp C_AC_UNDO   &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE   &kp C_AC_REDO            &kp C_AC_REDO     &kp C_AC_PASTE     &kp C_AC_COPY  &kp C_AC_CUT          &kp C_AC_UNDO   
-                              &trans      &trans          &mkp MCLK     &mkp RCLK   &mkp LCLK
+                              &trans      &trans          &tran     &mkp RCLK   &mkp LCLK
             >;
         };
     };

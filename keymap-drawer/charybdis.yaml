@@ -33,7 +33,7 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: Numerical, h: sticky}
+  - {t: '$$mdi:keyboard-tab$$', h: Numerical}
   - {t: Numerical, h: sticky}
   - {t: Symbol, h: sticky}
   Numerical:

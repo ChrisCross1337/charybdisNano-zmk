@@ -107,7 +107,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
-  - {t: trans, type: held}
+  - {type: held}
   NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

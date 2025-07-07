@@ -214,8 +214,8 @@ layers:
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
-  - '&mkp MCLK'
   - '&mkp LCLK'
+  - '&mkp MCLK'
   SCR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

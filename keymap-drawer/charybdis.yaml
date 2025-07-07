@@ -345,16 +345,16 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - RIGHT ALT
   - RIGHT WIN
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - REDO
-  - REDO
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
+  - AC UNDO
+  - AC CUT
+  - AC COPY
+  - AC PASTE
+  - AC REDO
+  - AC REDO
+  - AC PASTE
+  - AC COPY
+  - AC CUT
+  - AC UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '&mkp MCLK', type: held}

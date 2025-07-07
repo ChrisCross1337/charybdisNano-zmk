@@ -34,14 +34,15 @@
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings      = <&kp BACKSPACE>, <&kp DELETE>;
-            mods           = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
         fun_bspc: fun_backspace {
             compatible       = "zmk,behavior-hold-tap";
             #binding-cells   = <0>;
             tapping-term-ms  = <200>;
-            bindings         = <&bspc_del>, <&lt FUN>;
+            bindings         = <&lt FUN>, <&bspc_del>;
         };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";

@@ -131,9 +131,9 @@
             label = "POI";
             bindings = <
   &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)     &kp LC(Y)     &kp LC(V)     &kp LC(C)  &kp LC(X)   &kp LC(Z)   
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &tog 5     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &mo SCR       &mo SCR     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
   &trans    &mo SCR   &mo SNI    &trans     &tog 5       &mkp MB5   &mkp MB3   &tog SNI   &tog SCR  &mkp MB4
-                      &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp LCLK  &mkp MCLK
+                      &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp LCLK  &mkp RCLK
             >;
         };
 
@@ -142,7 +142,7 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &tog POI &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
         };

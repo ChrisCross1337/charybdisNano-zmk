@@ -58,25 +58,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        to_gaming {
-            bindings = <&tog 8>;
-            key-positions = <1 0 2 3>;
-        };
-
-        to_base {
-            bindings = <&tog 0>;
-            key-positions = <1 2 3 4>;
-        };
-
-        Button {
-            bindings = <&mo 9>;
-            key-positions = <31 30>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 

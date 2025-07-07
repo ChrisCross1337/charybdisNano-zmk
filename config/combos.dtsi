@@ -18,8 +18,8 @@ combos {
   COMBO(l_rightclick, &mkp RCLK, 21 23, BASE, COMBO_TERM_SLOW)
   COMBO(l_middleclick, &mkp MCLK, 22 24, BASE, COMBO_TERM_SLOW)
 
-  COMBO(r_leftclick, &mkp LCLK, 17 19, BASE, COMBO_TERM_SLOW)
-  COMBO(r_rightclick, &mkp RCLK, 27 29, BASE, COMBO_TERM_SLOW)
+  COMBO(r_leftclick, &mkp LCLK, 16 18, BASE, COMBO_TERM_SLOW)
+  COMBO(r_rightclick, &mkp RCLK, 26 28, BASE, COMBO_TERM_SLOW)
   COMBO(to_gaming, &tog 8, 0 1 2 3, BASE, COMBO_TERM_SLOW)
   COMBO(to_baseG, &to  0, 0 1 2 3, GAM, COMBO_TERM_SLOW)
   COMBO(to_pointer, &tog  5, 20 21 22 23, BASE, COMBO_TERM_SLOW)

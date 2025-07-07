@@ -38,6 +38,15 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+        fun_bspc: fun_backspace {
+            compatible       = "zmk,behavior-hold-tap";
+            #binding-cells   = <2>;
+            tapping-term-ms  = <200>;
+
+            /* first cell = tap behavior, second cell = hold behavior */
+            bindings = <&bspc_del, 0>,   /* tap → backspace_delete */
+                       <&to, FUN>;       /* hold → go to FUN layer */
+        };
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_HAND";
@@ -76,7 +85,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T         &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F   &kp G         &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON
   &lt POI Z    &kp X        &kp C         &kp V          &kp B         &kp N  &kp M         &kp COMMA     &kp DOT      &lt POI SLASH
-                            &lt MED ESC   &lt NAV SPACE  &lt BUT TAB   &lt NUM ENTER  &bspc_del FUN 
+                            &lt MED ESC   &lt NAV SPACE  &lt BUT TAB   &lt NUM ENTER  &fun_bspc  
             >;
         };
 

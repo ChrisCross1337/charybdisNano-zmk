@@ -1,5 +1,8 @@
 /dts-v1/;
 / {
+
+#include "charybdis.dtsi"
+
     /* redeclare the 5-column transform here */
     five_column_transform: matrix_transform {
         compatible = "zmk,five-column-transform";

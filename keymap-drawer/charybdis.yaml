@@ -21,7 +21,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: Z, h: Pointer}
+  - {t: Z, h: POI}
   - X
   - C
   - V
@@ -30,13 +30,13 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: Pointer}
-  - {t: '$$mdi:keyboard-esc$$', h: Media}
-  - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: '$$mdi:keyboard-tab$$', h: Numerical}
-  - {t: Numerical, h: sticky}
-  - {t: Symbol, h: sticky}
-  Numerical:
+  - {t: /, h: POI}
+  - {t: '$$mdi:keyboard-esc$$', h: MED}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM}
+  - {t: NUM, h: sticky}
+  - {t: SYM, h: sticky}
+  NUM:
   - '['
   - '7'
   - '8'
@@ -72,7 +72,7 @@ layers:
   - {t: '-', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Symbol:
+  SYM:
   - F12
   - F7
   - F8
@@ -108,7 +108,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - {type: held}
-  Navigation:
+  NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
-  Media:
+  MED:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:bluetooth-off$$
@@ -180,7 +180,7 @@ layers:
   - STOP
   - STOP
   - PLAY PAUSE
-  Pointer:
+  POI:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -202,21 +202,21 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - Scroll
-  - Sniper
+  - SCR
+  - SNP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Sniper, h: toggle}
-  - {t: Scroll, h: toggle}
+  - {t: SNP, h: toggle}
+  - {t: SCR, h: toggle}
   - {t: ▽, type: trans}
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp MCLK'
   - '&mkp LCLK'
-  Scroll:
+  SCR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -252,7 +252,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Sniper:
+  SNP:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -288,7 +288,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Gaming:
+  GAM:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -324,7 +324,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LEFT GUI
   - ESCAPE
-  Button:
+  BUT:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -376,12 +376,12 @@ combos:
 - p: [27, 28]
   k: '&mkp RCLK'
   l: [Base]
-- p: [26, 27]
-  k: '&mkp MCLK'
-  l: [Base]
 - p: [1, 0, 2, 3]
-  k: {t: Gaming, h: toggle}
+  k: {t: GAM, h: toggle}
+  l: [Base]
 - p: [1, 2, 3, 4]
   k: {t: Base, h: toggle}
+  l: [Base]
 - p: [31, 30]
-  k: Button
+  k: BUT
+  l: [Base]

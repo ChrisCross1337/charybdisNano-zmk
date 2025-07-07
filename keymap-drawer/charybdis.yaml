@@ -376,15 +376,15 @@ combos:
 - p: [27, 28]
   k: '&mkp RCLK'
   l: [Base]
-- p: [1, 0, 2, 3]
+- p: [0, 1, 2, 3]
   k: {t: GAM, h: toggle}
   l: [Base]
+- p: [0, 1, 2, 3]
+  k: {t: Base, h: toggle}
+  l: [GAM]
 - p: [20, 21, 22, 23]
   k: {t: POI, h: toggle}
   l: [Base]
 - p: [20, 21, 22, 23]
   k: {t: Base, h: toggle}
   l: [POI]
-- p: [1, 2, 3, 4]
-  k: {t: Base, h: toggle}
-  l: [GAM]

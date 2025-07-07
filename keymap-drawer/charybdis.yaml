@@ -196,7 +196,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: POI, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -205,12 +205,12 @@ layers:
   - SCR
   - SNP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: POI, h: toggle}
+  - '&mkp MB5'
+  - '&mkp MB3'
   - {t: SNP, h: toggle}
   - {t: SCR, h: toggle}
-  - {t: ▽, type: trans}
+  - '&mkp MB4'
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
